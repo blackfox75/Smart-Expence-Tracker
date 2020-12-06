@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		225684E72574759D005553A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225684E52574759D005553A8 /* Main.storyboard */; };
 		225684E92574759E005553A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225684E82574759E005553A8 /* Assets.xcassets */; };
 		225684EC2574759E005553A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225684EA2574759E005553A8 /* LaunchScreen.storyboard */; };
+		225684F625788698005553A8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225684F525788698005553A8 /* LoginViewController.swift */; };
+		225684F925788DEE005553A8 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225684F825788DEE005553A8 /* PasswordViewController.swift */; };
+		225684FC257C57AF005553A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 225684FB257C57AF005553A8 /* GoogleService-Info.plist */; };
+		5ED7AC5BBD7E3F4D23EA37BF /* Pods_Smart_Expence_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6ADD3F63135F31DE75D7406 /* Pods_Smart_Expence_Tracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,12 @@
 		225684E82574759E005553A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		225684EB2574759E005553A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		225684ED2574759E005553A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		225684F525788698005553A8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		225684F825788DEE005553A8 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		225684FB257C57AF005553A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A85415000063469895EA1C69 /* Pods-Smart Expence Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Expence Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Smart Expence Tracker/Pods-Smart Expence Tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		B6ADD3F63135F31DE75D7406 /* Pods_Smart_Expence_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_Expence_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB57BC6B53F407B0BF385A82 /* Pods-Smart Expence Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Expence Tracker.release.xcconfig"; path = "Target Support Files/Pods-Smart Expence Tracker/Pods-Smart Expence Tracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED7AC5BBD7E3F4D23EA37BF /* Pods_Smart_Expence_Tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				225684DE2574759D005553A8 /* Smart Expence Tracker */,
 				225684DD2574759D005553A8 /* Products */,
+				EAB1B336889F609A829B4615 /* Pods */,
+				68DBC6FE8EC5B5BAED724B77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +71,33 @@
 			children = (
 				225684DF2574759D005553A8 /* AppDelegate.swift */,
 				225684E12574759D005553A8 /* SceneDelegate.swift */,
+				225684F525788698005553A8 /* LoginViewController.swift */,
+				225684F825788DEE005553A8 /* PasswordViewController.swift */,
 				225684E32574759D005553A8 /* WelcomeViewController.swift */,
 				225684E52574759D005553A8 /* Main.storyboard */,
 				225684E82574759E005553A8 /* Assets.xcassets */,
 				225684EA2574759E005553A8 /* LaunchScreen.storyboard */,
 				225684ED2574759E005553A8 /* Info.plist */,
+				225684FB257C57AF005553A8 /* GoogleService-Info.plist */,
 			);
 			path = "Smart Expence Tracker";
+			sourceTree = "<group>";
+		};
+		68DBC6FE8EC5B5BAED724B77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6ADD3F63135F31DE75D7406 /* Pods_Smart_Expence_Tracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAB1B336889F609A829B4615 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A85415000063469895EA1C69 /* Pods-Smart Expence Tracker.debug.xcconfig */,
+				EB57BC6B53F407B0BF385A82 /* Pods-Smart Expence Tracker.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 225684F02574759E005553A8 /* Build configuration list for PBXNativeTarget "Smart Expence Tracker" */;
 			buildPhases = (
+				81FC4534821DCBD60DB06B15 /* [CP] Check Pods Manifest.lock */,
 				225684D82574759D005553A8 /* Sources */,
 				225684D92574759D005553A8 /* Frameworks */,
 				225684DA2574759D005553A8 /* Resources */,
+				3063DE75C1D540526BA7CDB0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,16 +162,61 @@
 				225684EC2574759E005553A8 /* LaunchScreen.storyboard in Resources */,
 				225684E92574759E005553A8 /* Assets.xcassets in Resources */,
 				225684E72574759D005553A8 /* Main.storyboard in Resources */,
+				225684FC257C57AF005553A8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3063DE75C1D540526BA7CDB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Smart Expence Tracker/Pods-Smart Expence Tracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Smart Expence Tracker/Pods-Smart Expence Tracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Smart Expence Tracker/Pods-Smart Expence Tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81FC4534821DCBD60DB06B15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Smart Expence Tracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		225684D82574759D005553A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225684F625788698005553A8 /* LoginViewController.swift in Sources */,
+				225684F925788DEE005553A8 /* PasswordViewController.swift in Sources */,
 				225684E42574759D005553A8 /* WelcomeViewController.swift in Sources */,
 				225684E02574759D005553A8 /* AppDelegate.swift in Sources */,
 				225684E22574759D005553A8 /* SceneDelegate.swift in Sources */,
@@ -283,6 +363,7 @@
 		};
 		225684F12574759E005553A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A85415000063469895EA1C69 /* Pods-Smart Expence Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +383,7 @@
 		};
 		225684F22574759E005553A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB57BC6B53F407B0BF385A82 /* Pods-Smart Expence Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
