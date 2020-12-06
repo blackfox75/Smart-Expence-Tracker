@@ -30,6 +30,7 @@ class PasswordViewController: UIViewController {
             Auth.auth().createUser(withEmail: login, password: password) { (result, error) in
                 if (error == nil) {
                     print(login,password)
+                    self.navigationController?.pushViewController(PasswordViewController.getfromStoryBoard(withId: "QuestionsViewController") as! QuestionsViewController, animated: true) 
                 } else {
                     print("error in signUp")
                 }

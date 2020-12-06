@@ -28,15 +28,14 @@ class WelcomeViewController: UIViewController {
             if (error != nil) {
                 print("error")
             } else {
-                print(self.loginTextField.text,self.passwordTextField.text)
+                print(self.loginTextField.text as Any,self.passwordTextField.text as Any)
+                self.navigationController?.pushViewController(PasswordViewController.getfromStoryBoard(withId: "QuestionsViewController") as! QuestionsViewController, animated: true) 
             }
         }
     }
     
     @IBAction func signUpButtonClicked(_ sender: Any) {
-        let st = UIStoryboard.init(name: "Main", bundle: nil)
-        let con = st.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-        navigationController?.pushViewController(con, animated: true)
+        navigationController?.pushViewController(WelcomeViewController.getfromStoryBoard(withId: "LoginViewController") as! LoginViewController, animated: true)
     }
     
 }

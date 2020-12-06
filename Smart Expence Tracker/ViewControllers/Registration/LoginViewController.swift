@@ -28,6 +28,7 @@ class LoginViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func countinueButtonClicked(_ sender: Any) {
+        
         let st = UIStoryboard.init(name: "Main", bundle: nil)
         let con = st.instantiateViewController(withIdentifier: "PasswordViewController") as! PasswordViewController
         con.loginControllerDelegate = self // почему ее именно тут нужно писать?
