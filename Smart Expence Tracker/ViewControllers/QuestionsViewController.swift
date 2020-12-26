@@ -248,7 +248,6 @@ class QuestionsViewController: UIViewController {
                 yesButton.isHidden = true
                 noButton.isHidden = true
                 continueButton.isHidden = false
-//                hiLabel.text = "Congratulations, you ready for use Smart Expence Tracker"
             }
         case .nextController:
             navigationController?.pushViewController(UIViewController.getfromStoryBoard(withId: "JobsViewController"), animated: true)
