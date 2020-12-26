@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DebitCardData" representedClassName="DebitCardData" syncable="YES" codeGenerationType="class">
+        <attribute name="debitCardAmountOfMoney" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="debitCardName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="JobData" representedClassName="JobData" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="salary" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="MounthlySpentData" representedClassName="MounthlySpentData" syncable="YES" codeGenerationType="class">
+        <attribute name="mounthlySpentDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="mounthlySpentName" optional="YES" attributeType="String"/>
+        <attribute name="mounthlySpentSum" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="UserData" representedClassName=".UserData" syncable="YES">
+        <attribute name="name" attributeType="String"/>
+        <relationship name="debitCard" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DebitCardData"/>
+        <relationship name="job" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="JobData"/>
+        <relationship name="mounthlySpent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MounthlySpentData"/>
+    </entity>
+    <elements>
+        <element name="UserData" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="JobData" positionX="-54" positionY="0" width="128" height="59"/>
+        <element name="DebitCardData" positionX="-36" positionY="27" width="128" height="59"/>
+        <element name="MounthlySpentData" positionX="-18" positionY="36" width="128" height="74"/>
+    </elements>
+</model>
