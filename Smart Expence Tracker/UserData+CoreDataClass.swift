@@ -1,8 +1,8 @@
 //
-//  User+CoreDataClass.swift
+//  UserData+CoreDataClass.swift
 //  Smart Expence Tracker
 //
-//  Created by Robert Tratseuski on 12/25/20.
+//  Created by Robert Tratseuski on 12/27/20.
 //
 //
 

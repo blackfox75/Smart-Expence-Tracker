@@ -1,8 +1,8 @@
 //
-//  User+CoreDataProperties.swift
+//  UserData+CoreDataProperties.swift
 //  Smart Expence Tracker
 //
-//  Created by Robert Tratseuski on 12/25/20.
+//  Created by Robert Tratseuski on 12/27/20.
 //
 //
 
@@ -17,7 +17,9 @@ extension UserData {
     }
 
     @NSManaged public var name: String?
-    @NSManaged public var age: String?
+    @NSManaged public var debitCard: DebitCardData?
+    @NSManaged public var job: JobData?
+    @NSManaged public var mounthlySpent: MounthlySpentData?
 
 }
 

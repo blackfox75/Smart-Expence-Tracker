@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 
 enum Questions {
@@ -34,7 +35,12 @@ class QuestionsViewController: UIViewController {
     private var jobInfo : Job?
     private var debitCardInfo : DebitCard?
     private var mounthlySpentInfo : MounthlySpent?
-    private var             stateForYesOrNo : String = "company"
+    private var stateForYesOrNo : String = "company"
+    
+    //For CoreData
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    var items: [UserData]?
     
     lazy private var questionList: [String] = ["What name of your current job?","Do you have more jobs?", "What name of your main debit card?","Do you have more debit cards?", "What your mounthly spent?", "Do you have more mounthly spent?","Congratulations, you ready for use Smart Expence Tracker"]
     private var questionNum: Int = -1 {
@@ -66,7 +72,7 @@ class QuestionsViewController: UIViewController {
             default:
                 break
             }
-          
+            
         }
     }
     
@@ -174,6 +180,17 @@ class QuestionsViewController: UIViewController {
         case .company:
             jobInfo = Job(name: inputText.text ?? "", salary: Int(secondInputText.text ?? "0") ?? 0)
             userInfo.job.append(jobInfo!)
+            //This is how to add info in CoreData
+            //Create a person Object
+            let newUser = UserData(context: self.context)
+            newUser.name = inputText.text
+            //Save the data
+            do {
+                try self.context.save()
+            } catch {
+                print("Error")
+            }
+            
             
             firstTextFieldView.isHidden = true
             secondTextFieldView.isHidden = true
@@ -205,7 +222,7 @@ class QuestionsViewController: UIViewController {
             noButton.isHidden = false
             continueButton.isHidden = true
             stateForYesOrNo = "debitCards"
-        
+            
         case .moreDebitCards:
             if yesOrNo {
                 navigationController?.pushViewController(UIViewController.getfromStoryBoard(withId: "JobsViewController"), animated: true)
@@ -252,12 +269,13 @@ class QuestionsViewController: UIViewController {
             }
         case .nextController:
             navigationController?.pushViewController(UIViewController.getfromStoryBoard(withId: "JobsViewController"), animated: true)
+            
         case .first:
             print("first")
             firstTextFieldView.isHidden = false
             secondTextFieldView.isHidden = false
         }
-//        print(userInfo)
+        //        print(userInfo)
     }
     
     
@@ -269,6 +287,7 @@ class QuestionsViewController: UIViewController {
         setupNavigationBar()
         // Do any additional setup after loading the view.
     }
+    
     
     
 }
