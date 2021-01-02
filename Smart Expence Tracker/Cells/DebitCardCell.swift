@@ -9,8 +9,8 @@ import UIKit
 
 class DebitCardCell: UITableViewCell {
 
-    @IBOutlet weak var first: UILabel!
-    @IBOutlet weak var second: UILabel!
+    @IBOutlet weak var debitCardName: UILabel!
+    @IBOutlet weak var debitCardMoney: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,7 +19,7 @@ class DebitCardCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     

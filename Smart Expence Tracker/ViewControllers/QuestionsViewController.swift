@@ -184,13 +184,17 @@ class QuestionsViewController: UIViewController {
             //Create a person Object
             let newUser = UserData(context: self.context)
             newUser.name = inputText.text
+            
+            //Try to create Data+CoreData for working with jobs
+//            let newJob = JobData(context: self.context)
+//            newUser.job[0].append(inputText.text)
+            
             //Save the data
             do {
                 try self.context.save()
             } catch {
                 print("Error")
             }
-            
             
             firstTextFieldView.isHidden = true
             secondTextFieldView.isHidden = true

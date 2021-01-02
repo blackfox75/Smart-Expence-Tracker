@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DebitCardData" representedClassName="DebitCardData" syncable="YES">
+        <attribute name="debitCardAmountOfMoney" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="debitCardName" optional="YES" attributeType="String"/>
+        <relationship name="mounthlySpent" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MounthlySpentData" inverseName="cardOfMounthlySpent" inverseEntity="MounthlySpentData"/>
+        <relationship name="userOfDebitCard" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserData" inverseName="debitCard" inverseEntity="UserData"/>
+    </entity>
+    <entity name="JobData" representedClassName="JobData" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="salary" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="userOfJob" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserData" inverseName="job" inverseEntity="UserData"/>
+    </entity>
+    <entity name="MounthlySpentData" representedClassName="MounthlySpentData" syncable="YES">
+        <attribute name="mounthlySpentDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="mounthlySpentName" optional="YES" attributeType="String"/>
+        <attribute name="mounthlySpentSum" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="cardOfMounthlySpent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DebitCardData" inverseName="mounthlySpent" inverseEntity="DebitCardData"/>
+    </entity>
+    <entity name="UserData" representedClassName="UserData" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="debitCard" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DebitCardData" inverseName="userOfDebitCard" inverseEntity="DebitCardData"/>
+        <relationship name="job" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JobData" inverseName="userOfJob" inverseEntity="JobData"/>
+    </entity>
+    <elements>
+        <element name="UserData" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="MounthlySpentData" positionX="-54" positionY="0" width="128" height="89"/>
+        <element name="JobData" positionX="-36" positionY="9" width="128" height="74"/>
+        <element name="DebitCardData" positionX="-18" positionY="27" width="128" height="89"/>
+    </elements>
+</model>

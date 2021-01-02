@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		2202CD10259EDEE000ECA059 /* DebitCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2202CD0E259EDEE000ECA059 /* DebitCardCell.swift */; };
 		2202CD11259EDEE000ECA059 /* DebitCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2202CD0F259EDEE000ECA059 /* DebitCardCell.xib */; };
-		2202CD25259F8FF700ECA059 /* MoneyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2202CD23259F8FF700ECA059 /* MoneyCell.swift */; };
-		2202CD26259F8FF700ECA059 /* MoneyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2202CD24259F8FF700ECA059 /* MoneyCell.xib */; };
-		2252B9D02599525E00B97D49 /* UserData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2252B9CE2599525E00B97D49 /* UserData+CoreDataClass.swift */; };
-		2252B9D12599525E00B97D49 /* UserData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2252B9CF2599525E00B97D49 /* UserData+CoreDataProperties.swift */; };
 		225684E02574759D005553A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225684DF2574759D005553A8 /* AppDelegate.swift */; };
 		225684E22574759D005553A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225684E12574759D005553A8 /* SceneDelegate.swift */; };
 		225684E42574759D005553A8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225684E32574759D005553A8 /* WelcomeViewController.swift */; };
@@ -30,17 +26,21 @@
 		22C3360E25858C1300579C39 /* JobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C3360D25858C1300579C39 /* JobsViewController.swift */; };
 		22C3361225858CEA00579C39 /* jobsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C3361025858CEA00579C39 /* jobsTableViewCell.swift */; };
 		22C3361325858CEA00579C39 /* jobsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C3361125858CEA00579C39 /* jobsTableViewCell.xib */; };
-		22E0F14D2596D1F90021D277 /* UserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22E0F14B2596D1F90021D277 /* UserModel.xcdatamodeld */; };
+		22DA0304259FFABC00E719B3 /* UserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22DA0302259FFABC00E719B3 /* UserModel.xcdatamodeld */; };
+		22DA036425A0024900E719B3 /* DebitCardData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA035C25A0024900E719B3 /* DebitCardData+CoreDataClass.swift */; };
+		22DA036525A0024900E719B3 /* DebitCardData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA035D25A0024900E719B3 /* DebitCardData+CoreDataProperties.swift */; };
+		22DA036625A0024900E719B3 /* JobData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA035E25A0024900E719B3 /* JobData+CoreDataClass.swift */; };
+		22DA036725A0024900E719B3 /* JobData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA035F25A0024900E719B3 /* JobData+CoreDataProperties.swift */; };
+		22DA036825A0024900E719B3 /* MounthlySpentData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA036025A0024900E719B3 /* MounthlySpentData+CoreDataClass.swift */; };
+		22DA036925A0024900E719B3 /* MounthlySpentData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA036125A0024900E719B3 /* MounthlySpentData+CoreDataProperties.swift */; };
+		22DA036A25A0024900E719B3 /* UserData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA036225A0024900E719B3 /* UserData+CoreDataClass.swift */; };
+		22DA036B25A0024900E719B3 /* UserData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA036325A0024900E719B3 /* UserData+CoreDataProperties.swift */; };
 		5ED7AC5BBD7E3F4D23EA37BF /* Pods_Smart_Expence_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6ADD3F63135F31DE75D7406 /* Pods_Smart_Expence_Tracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2202CD0E259EDEE000ECA059 /* DebitCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitCardCell.swift; sourceTree = "<group>"; };
 		2202CD0F259EDEE000ECA059 /* DebitCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DebitCardCell.xib; sourceTree = "<group>"; };
-		2202CD23259F8FF700ECA059 /* MoneyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyCell.swift; sourceTree = "<group>"; };
-		2202CD24259F8FF700ECA059 /* MoneyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoneyCell.xib; sourceTree = "<group>"; };
-		2252B9CE2599525E00B97D49 /* UserData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UserData+CoreDataClass.swift"; path = "Smart Expence Tracker/UserData+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		2252B9CF2599525E00B97D49 /* UserData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UserData+CoreDataProperties.swift"; path = "Smart Expence Tracker/UserData+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		225684DC2574759D005553A8 /* Smart Expence Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Expence Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		225684DF2574759D005553A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		225684E12574759D005553A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +60,15 @@
 		22C3360D25858C1300579C39 /* JobsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsViewController.swift; sourceTree = "<group>"; };
 		22C3361025858CEA00579C39 /* jobsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jobsTableViewCell.swift; sourceTree = "<group>"; };
 		22C3361125858CEA00579C39 /* jobsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = jobsTableViewCell.xib; sourceTree = "<group>"; };
-		22E0F14C2596D1F90021D277 /* UserModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserModel.xcdatamodel; sourceTree = "<group>"; };
+		22DA0303259FFABC00E719B3 /* UserModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserModel.xcdatamodel; sourceTree = "<group>"; };
+		22DA035C25A0024900E719B3 /* DebitCardData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DebitCardData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		22DA035D25A0024900E719B3 /* DebitCardData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DebitCardData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		22DA035E25A0024900E719B3 /* JobData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JobData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		22DA035F25A0024900E719B3 /* JobData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JobData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		22DA036025A0024900E719B3 /* MounthlySpentData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MounthlySpentData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		22DA036125A0024900E719B3 /* MounthlySpentData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MounthlySpentData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		22DA036225A0024900E719B3 /* UserData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		22DA036325A0024900E719B3 /* UserData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A85415000063469895EA1C69 /* Pods-Smart Expence Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Expence Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Smart Expence Tracker/Pods-Smart Expence Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		B6ADD3F63135F31DE75D7406 /* Pods_Smart_Expence_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_Expence_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB57BC6B53F407B0BF385A82 /* Pods-Smart Expence Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Expence Tracker.release.xcconfig"; path = "Target Support Files/Pods-Smart Expence Tracker/Pods-Smart Expence Tracker.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +107,7 @@
 		225684DE2574759D005553A8 /* Smart Expence Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				22DA0302259FFABC00E719B3 /* UserModel.xcdatamodeld */,
 				22E0F1702596EBF60021D277 /* Cells */,
 				22568589257D559F005553A8 /* Models */,
 				2256858A257D55AA005553A8 /* Views */,
@@ -114,8 +123,14 @@
 		22568589257D559F005553A8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2252B9CE2599525E00B97D49 /* UserData+CoreDataClass.swift */,
-				2252B9CF2599525E00B97D49 /* UserData+CoreDataProperties.swift */,
+				22DA035C25A0024900E719B3 /* DebitCardData+CoreDataClass.swift */,
+				22DA035D25A0024900E719B3 /* DebitCardData+CoreDataProperties.swift */,
+				22DA035E25A0024900E719B3 /* JobData+CoreDataClass.swift */,
+				22DA035F25A0024900E719B3 /* JobData+CoreDataProperties.swift */,
+				22DA036025A0024900E719B3 /* MounthlySpentData+CoreDataClass.swift */,
+				22DA036125A0024900E719B3 /* MounthlySpentData+CoreDataProperties.swift */,
+				22DA036225A0024900E719B3 /* UserData+CoreDataClass.swift */,
+				22DA036325A0024900E719B3 /* UserData+CoreDataProperties.swift */,
 				2256859D257D574F005553A8 /* User.swift */,
 				22C3360725857BD400579C39 /* UserState.swift */,
 			);
@@ -135,8 +150,6 @@
 			children = (
 				22568555257D43AE005553A8 /* QuestionsViewController.swift */,
 				22C3360A2585870300579C39 /* ChangeExtraSpentViewController.swift */,
-				22C3361025858CEA00579C39 /* jobsTableViewCell.swift */,
-				22C3361125858CEA00579C39 /* jobsTableViewCell.xib */,
 				22C3360D25858C1300579C39 /* JobsViewController.swift */,
 				2256858C257D55C4005553A8 /* Registration */,
 			);
@@ -160,7 +173,6 @@
 				225684EA2574759E005553A8 /* LaunchScreen.storyboard */,
 				225684FB257C57AF005553A8 /* GoogleService-Info.plist */,
 				22568565257D4A80005553A8 /* HelpFunctions.swift */,
-				22E0F14B2596D1F90021D277 /* UserModel.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -169,9 +181,9 @@
 			isa = PBXGroup;
 			children = (
 				2202CD0E259EDEE000ECA059 /* DebitCardCell.swift */,
-				2202CD23259F8FF700ECA059 /* MoneyCell.swift */,
-				2202CD24259F8FF700ECA059 /* MoneyCell.xib */,
 				2202CD0F259EDEE000ECA059 /* DebitCardCell.xib */,
+				22C3361025858CEA00579C39 /* jobsTableViewCell.swift */,
+				22C3361125858CEA00579C39 /* jobsTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -254,7 +266,6 @@
 			files = (
 				225684EC2574759E005553A8 /* LaunchScreen.storyboard in Resources */,
 				225684E92574759E005553A8 /* Assets.xcassets in Resources */,
-				2202CD26259F8FF700ECA059 /* MoneyCell.xib in Resources */,
 				22C3361325858CEA00579C39 /* jobsTableViewCell.xib in Resources */,
 				225684E72574759D005553A8 /* Main.storyboard in Resources */,
 				2202CD11259EDEE000ECA059 /* DebitCardCell.xib in Resources */,
@@ -311,22 +322,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2202CD25259F8FF700ECA059 /* MoneyCell.swift in Sources */,
-				2252B9D12599525E00B97D49 /* UserData+CoreDataProperties.swift in Sources */,
-				2252B9D02599525E00B97D49 /* UserData+CoreDataClass.swift in Sources */,
+				22DA036B25A0024900E719B3 /* UserData+CoreDataProperties.swift in Sources */,
+				22DA0304259FFABC00E719B3 /* UserModel.xcdatamodeld in Sources */,
 				22C3360825857BD400579C39 /* UserState.swift in Sources */,
+				22DA036725A0024900E719B3 /* JobData+CoreDataProperties.swift in Sources */,
+				22DA036A25A0024900E719B3 /* UserData+CoreDataClass.swift in Sources */,
 				225684F625788698005553A8 /* LoginViewController.swift in Sources */,
 				2202CD10259EDEE000ECA059 /* DebitCardCell.swift in Sources */,
+				22DA036425A0024900E719B3 /* DebitCardData+CoreDataClass.swift in Sources */,
 				22C3360B2585870300579C39 /* ChangeExtraSpentViewController.swift in Sources */,
 				225684F925788DEE005553A8 /* PasswordViewController.swift in Sources */,
 				22568556257D43AE005553A8 /* QuestionsViewController.swift in Sources */,
+				22DA036525A0024900E719B3 /* DebitCardData+CoreDataProperties.swift in Sources */,
+				22DA036625A0024900E719B3 /* JobData+CoreDataClass.swift in Sources */,
 				225684E42574759D005553A8 /* WelcomeViewController.swift in Sources */,
+				22DA036925A0024900E719B3 /* MounthlySpentData+CoreDataProperties.swift in Sources */,
 				2256859E257D574F005553A8 /* User.swift in Sources */,
 				225684E02574759D005553A8 /* AppDelegate.swift in Sources */,
 				225684E22574759D005553A8 /* SceneDelegate.swift in Sources */,
+				22DA036825A0024900E719B3 /* MounthlySpentData+CoreDataClass.swift in Sources */,
 				22C3360E25858C1300579C39 /* JobsViewController.swift in Sources */,
 				22568566257D4A80005553A8 /* HelpFunctions.swift in Sources */,
-				22E0F14D2596D1F90021D277 /* UserModel.xcdatamodeld in Sources */,
 				22C3361225858CEA00579C39 /* jobsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,12 +549,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		22E0F14B2596D1F90021D277 /* UserModel.xcdatamodeld */ = {
+		22DA0302259FFABC00E719B3 /* UserModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				22E0F14C2596D1F90021D277 /* UserModel.xcdatamodel */,
+				22DA0303259FFABC00E719B3 /* UserModel.xcdatamodel */,
 			);
-			currentVersion = 22E0F14C2596D1F90021D277 /* UserModel.xcdatamodel */;
+			currentVersion = 22DA0303259FFABC00E719B3 /* UserModel.xcdatamodel */;
 			path = UserModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -9,39 +9,40 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DebitCardCell" rowHeight="183" id="KGk-i7-Jjw" customClass="DebitCardCell" customModule="Smart_Expence_Tracker" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="543" height="183"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DebitCardCell" rowHeight="106" id="KGk-i7-Jjw" customClass="DebitCardCell" customModule="Smart_Expence_Tracker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="106"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="543" height="183"/>
+                <rect key="frame" x="0.0" y="0.0" width="328" height="106"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vf-HE-YgQ">
-                        <rect key="frame" x="70" y="35" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of Debit Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vf-HE-YgQ">
+                        <rect key="frame" x="75" y="30" width="178" height="23.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wC1-MH-TJL">
-                        <rect key="frame" x="70" y="96" width="41.5" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$8534" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wC1-MH-TJL">
+                        <rect key="frame" x="136" y="61.5" width="56" height="23.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" red="0.100961335" green="0.80004864929999997" blue="0.92929404969999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
-                    <constraint firstItem="0Vf-HE-YgQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="35" id="P3K-g1-27f"/>
-                    <constraint firstItem="wC1-MH-TJL" firstAttribute="top" secondItem="0Vf-HE-YgQ" secondAttribute="bottom" constant="40" id="du4-ek-lat"/>
-                    <constraint firstItem="0Vf-HE-YgQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="70" id="fFF-o1-dSi"/>
-                    <constraint firstItem="wC1-MH-TJL" firstAttribute="leading" secondItem="0Vf-HE-YgQ" secondAttribute="leading" id="sQL-pO-dEd"/>
+                    <constraint firstItem="0Vf-HE-YgQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="0CE-c5-oPq"/>
+                    <constraint firstItem="0Vf-HE-YgQ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="94U-IF-bSi"/>
+                    <constraint firstItem="wC1-MH-TJL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="20" id="pfz-gx-Zl8"/>
+                    <constraint firstItem="wC1-MH-TJL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="sbo-0h-OjT"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="first" destination="0Vf-HE-YgQ" id="dor-eV-6JD"/>
-                <outlet property="second" destination="wC1-MH-TJL" id="rtF-Tr-OGA"/>
+                <outlet property="debitCardMoney" destination="wC1-MH-TJL" id="rtF-Tr-OGA"/>
+                <outlet property="debitCardName" destination="0Vf-HE-YgQ" id="dor-eV-6JD"/>
             </connections>
-            <point key="canvasLocation" x="293.47826086956525" y="156.36160714285714"/>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
         </tableViewCell>
     </objects>
 </document>
