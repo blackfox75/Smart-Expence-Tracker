@@ -24,8 +24,6 @@
 		22C3360825857BD400579C39 /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C3360725857BD400579C39 /* UserState.swift */; };
 		22C3360B2585870300579C39 /* ChangeExtraSpentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C3360A2585870300579C39 /* ChangeExtraSpentViewController.swift */; };
 		22C3360E25858C1300579C39 /* JobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C3360D25858C1300579C39 /* JobsViewController.swift */; };
-		22C3361225858CEA00579C39 /* jobsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C3361025858CEA00579C39 /* jobsTableViewCell.swift */; };
-		22C3361325858CEA00579C39 /* jobsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C3361125858CEA00579C39 /* jobsTableViewCell.xib */; };
 		22DA0304259FFABC00E719B3 /* UserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22DA0302259FFABC00E719B3 /* UserModel.xcdatamodeld */; };
 		22DA036425A0024900E719B3 /* DebitCardData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA035C25A0024900E719B3 /* DebitCardData+CoreDataClass.swift */; };
 		22DA036525A0024900E719B3 /* DebitCardData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA035D25A0024900E719B3 /* DebitCardData+CoreDataProperties.swift */; };
@@ -35,6 +33,8 @@
 		22DA036925A0024900E719B3 /* MounthlySpentData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA036125A0024900E719B3 /* MounthlySpentData+CoreDataProperties.swift */; };
 		22DA036A25A0024900E719B3 /* UserData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA036225A0024900E719B3 /* UserData+CoreDataClass.swift */; };
 		22DA036B25A0024900E719B3 /* UserData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA036325A0024900E719B3 /* UserData+CoreDataProperties.swift */; };
+		22DA039B25A2441400E719B3 /* jobsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA039925A2441400E719B3 /* jobsTableViewCell.swift */; };
+		22DA039C25A2441400E719B3 /* jobsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22DA039A25A2441400E719B3 /* jobsTableViewCell.xib */; };
 		5ED7AC5BBD7E3F4D23EA37BF /* Pods_Smart_Expence_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6ADD3F63135F31DE75D7406 /* Pods_Smart_Expence_Tracker.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,8 +58,6 @@
 		22C3360725857BD400579C39 /* UserState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
 		22C3360A2585870300579C39 /* ChangeExtraSpentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeExtraSpentViewController.swift; sourceTree = "<group>"; };
 		22C3360D25858C1300579C39 /* JobsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsViewController.swift; sourceTree = "<group>"; };
-		22C3361025858CEA00579C39 /* jobsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jobsTableViewCell.swift; sourceTree = "<group>"; };
-		22C3361125858CEA00579C39 /* jobsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = jobsTableViewCell.xib; sourceTree = "<group>"; };
 		22DA0303259FFABC00E719B3 /* UserModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserModel.xcdatamodel; sourceTree = "<group>"; };
 		22DA035C25A0024900E719B3 /* DebitCardData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DebitCardData+CoreDataClass.swift"; sourceTree = "<group>"; };
 		22DA035D25A0024900E719B3 /* DebitCardData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DebitCardData+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -69,6 +67,8 @@
 		22DA036125A0024900E719B3 /* MounthlySpentData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MounthlySpentData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		22DA036225A0024900E719B3 /* UserData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserData+CoreDataClass.swift"; sourceTree = "<group>"; };
 		22DA036325A0024900E719B3 /* UserData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		22DA039925A2441400E719B3 /* jobsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jobsTableViewCell.swift; sourceTree = "<group>"; };
+		22DA039A25A2441400E719B3 /* jobsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = jobsTableViewCell.xib; sourceTree = "<group>"; };
 		A85415000063469895EA1C69 /* Pods-Smart Expence Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Expence Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Smart Expence Tracker/Pods-Smart Expence Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		B6ADD3F63135F31DE75D7406 /* Pods_Smart_Expence_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_Expence_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB57BC6B53F407B0BF385A82 /* Pods-Smart Expence Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Expence Tracker.release.xcconfig"; path = "Target Support Files/Pods-Smart Expence Tracker/Pods-Smart Expence Tracker.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,8 +182,8 @@
 			children = (
 				2202CD0E259EDEE000ECA059 /* DebitCardCell.swift */,
 				2202CD0F259EDEE000ECA059 /* DebitCardCell.xib */,
-				22C3361025858CEA00579C39 /* jobsTableViewCell.swift */,
-				22C3361125858CEA00579C39 /* jobsTableViewCell.xib */,
+				22DA039925A2441400E719B3 /* jobsTableViewCell.swift */,
+				22DA039A25A2441400E719B3 /* jobsTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -265,8 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				225684EC2574759E005553A8 /* LaunchScreen.storyboard in Resources */,
+				22DA039C25A2441400E719B3 /* jobsTableViewCell.xib in Resources */,
 				225684E92574759E005553A8 /* Assets.xcassets in Resources */,
-				22C3361325858CEA00579C39 /* jobsTableViewCell.xib in Resources */,
 				225684E72574759D005553A8 /* Main.storyboard in Resources */,
 				2202CD11259EDEE000ECA059 /* DebitCardCell.xib in Resources */,
 				225684FC257C57AF005553A8 /* GoogleService-Info.plist in Resources */,
@@ -337,13 +337,13 @@
 				22DA036625A0024900E719B3 /* JobData+CoreDataClass.swift in Sources */,
 				225684E42574759D005553A8 /* WelcomeViewController.swift in Sources */,
 				22DA036925A0024900E719B3 /* MounthlySpentData+CoreDataProperties.swift in Sources */,
+				22DA039B25A2441400E719B3 /* jobsTableViewCell.swift in Sources */,
 				2256859E257D574F005553A8 /* User.swift in Sources */,
 				225684E02574759D005553A8 /* AppDelegate.swift in Sources */,
 				225684E22574759D005553A8 /* SceneDelegate.swift in Sources */,
 				22DA036825A0024900E719B3 /* MounthlySpentData+CoreDataClass.swift in Sources */,
 				22C3360E25858C1300579C39 /* JobsViewController.swift in Sources */,
 				22568566257D4A80005553A8 /* HelpFunctions.swift in Sources */,
-				22C3361225858CEA00579C39 /* jobsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

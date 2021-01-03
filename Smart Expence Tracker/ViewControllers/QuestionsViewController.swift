@@ -36,11 +36,15 @@ class QuestionsViewController: UIViewController {
     private var debitCardInfo : DebitCard?
     private var mounthlySpentInfo : MounthlySpent?
     private var stateForYesOrNo : String = "company"
+    lazy var newUser = UserData(context: self.context)
+    lazy var newJob = JobData(context: self.context)
+    lazy var newDebitCard = DebitCardData(context: self.context)
     
     //For CoreData
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    var items: [UserData]?
+    var items: [JobData]?
+//    var items : [NSManagedObject]?
     
     lazy private var questionList: [String] = ["What name of your current job?","Do you have more jobs?", "What name of your main debit card?","Do you have more debit cards?", "What your mounthly spent?", "Do you have more mounthly spent?","Congratulations, you ready for use Smart Expence Tracker"]
     private var questionNum: Int = -1 {
@@ -176,18 +180,16 @@ class QuestionsViewController: UIViewController {
     }
     
     func updateUI() {
+        
+        
         switch currentQuestion {
         case .company:
-            jobInfo = Job(name: inputText.text ?? "", salary: Int(secondInputText.text ?? "0") ?? 0)
-            userInfo.job.append(jobInfo!)
             //This is how to add info in CoreData
-            //Create a person Object
-            let newUser = UserData(context: self.context)
-            newUser.name = inputText.text
-            
-            //Try to create Data+CoreData for working with jobs
-//            let newJob = JobData(context: self.context)
-//            newUser.job[0].append(inputText.text)
+            //Create a person Object at first row of function UpdateUI()
+            //Create a job Object at second row of function UpdateUI()
+            newJob.name = inputText.text
+            newJob.salary = Double(secondInputText.text!)!
+            newUser.addToJob(newJob)
             
             //Save the data
             do {
@@ -206,6 +208,7 @@ class QuestionsViewController: UIViewController {
             if yesOrNo {
                 navigationController?.pushViewController(UIViewController.getfromStoryBoard(withId: "JobsViewController"), animated: true)
             } else {
+                
                 questionNum += 1
                 inputText.text = ""
                 secondInputText.text = ""
@@ -217,8 +220,16 @@ class QuestionsViewController: UIViewController {
                 continueButton.isHidden = false
             }
         case .nameOfDebitCard:
-            debitCardInfo = DebitCard(debitCardName: inputText.text ?? "", debitCardAmountOfMoney: Double(secondInputText.text ?? "0.0") ?? 0.0)
-            userInfo.debitCard.append(debitCardInfo!)
+            newDebitCard.debitCardName = inputText.text
+            newDebitCard.debitCardAmountOfMoney = Double(secondInputText.text!)!
+            newUser.addToDebitCard(newDebitCard)
+            
+            //Save the data
+            do {
+                try self.context.save()
+            } catch {
+                print("Error")
+            }
             
             firstTextFieldView.isHidden = true
             secondTextFieldView.isHidden = true
@@ -279,10 +290,7 @@ class QuestionsViewController: UIViewController {
             firstTextFieldView.isHidden = false
             secondTextFieldView.isHidden = false
         }
-        //        print(userInfo)
     }
-    
-    
     
     // MARK: - Lyfecycle
     override func viewDidLoad() {
@@ -295,4 +303,3 @@ class QuestionsViewController: UIViewController {
     
     
 }
-
